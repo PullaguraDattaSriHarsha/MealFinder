@@ -82,3 +82,55 @@ nav{
     font-family:Arial, Helvetica, sans-serif;
     font-size:x-large;
 }
+.cards{
+    padding:5% 3% 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.crd{
+    position:relative;
+    height:160px;
+    width:240px;
+    box-shadow: 10px 10px  10px 10px rgb(243, 243, 243);
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    background-color: white;
+}
+
+.crd img{
+    width: 95%;
+    height:95%;
+    padding-left: 5px;
+    
+}
+
+.cardname{
+    position: absolute;
+    background-color: rgb(253, 105, 20) ;
+    color:white;
+    width:55px;
+    border-radius: 5px;
+    top:10px;
+    right:10px;
+    text-align: center;
+}
+
+.cn2, .cn3, .cn10, .cn11{
+    width:80px;
+}
+.cn5{
+    width:150px;
+}
+.cn8{
+    width:90px;  
+}
+.cn12, .cn13{
+    width:120px; 
+}
+
+.crd:hover img{
+    transform:scale(0.8);
+}

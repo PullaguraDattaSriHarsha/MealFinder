@@ -1,0 +1,29 @@
+nav{
+    background-color: rgb(253, 105, 20);
+    color:white;
+    font-weight: 650;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:monospace;
+    font-size:larger;
+    padding:15px 50px ;
+    position: fixed;
+    z-index: 5;
+    width:91.95%;
+    top:0;
+    left:10;
+    
+}
+.left a{
+    text-decoration: none;
+    color:white;
+}
+.left img{
+    height:18px;
+    width:20px; 
+    padding-right: 10px;
+}
+.left{
+  display:flex;
+}

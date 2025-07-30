@@ -1,170 +1,174 @@
-/* Homepage css */
-nav{
-    background-color: rgb(253, 105, 20);
-    color:white;
+/* ===== Navbar Styles ===== */
+nav {
+    background-color: rgb(253, 105, 20); /* Orange navbar */
+    color: white;
     font-weight: 650;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:monospace;
-    font-size:larger;
-    padding:15px 50px ;
+    font-family: monospace;
+    font-size: larger;
+    padding: 15px 50px;
     position: fixed;
     z-index: 5;
-    width:91.95%;
-    top:0;
-    left:10;
-    
-}
-.left a{
-    text-decoration: none;
-    color:white;
-}
-.left img{
-    height:18px;
-    width:20px; 
-    padding-right: 10px;
-}
-.left{
-  display:flex;
+    width: 91.95%;
+    top: 0;
+    left: 10; /* Incorrect unit, ideally should be 10px */
 }
 
-.main{
+.left a {
+    text-decoration: none;
+    color: white;
+}
+.left img {
+    height: 18px;
+    width: 20px; 
+    padding-right: 10px;
+}
+.left {
+    display: flex;
+}
+
+/* ===== Hero Section (Main Banner) ===== */
+.main {
     position: relative;
     text-align: center;
     width: 100%;
-    height:500px;
+    height: 500px;
     background-color: black;
     margin-top: 55px;
 }
-.main img{
-    width:100%;
-    height:500px;
-    opacity: 0.5;
+.main img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.5; /* Adds dark overlay for text readability */
 }
 .main .abs {
     position: absolute;
     top: 40%;
     left: 40%;
     z-index: 1;
-    color:white;
-    font-family:sans-serif;
+    color: white;
+    font-family: sans-serif;
 }
-.main input{
+.main input {
     border-radius: 20px;
     border: none;
-    height:40px;
-    width:200px;
+    height: 40px;
+    width: 200px;
     padding: 20px;
 }
-.main button{
+.main button {
     height: 40px;
-    width:40px;
+    width: 40px;
     border-radius: 50%;
     background-color: rgb(253, 105, 20);
     border: 1px solid white;
 }
-.abs i{
-    color:white;  
+.abs i {
+    color: white;  
 }
-.abs button:hover i{
-    color:rgb(253, 105, 20);
+.abs button:hover i {
+    color: rgb(253, 105, 20); /* Icon changes color on hover */
 }
-.abs button:hover{
-    background-color: white;
+.abs button:hover {
+    background-color: white; /* Button turns white on hover */
 }
 
-.Categories{
+/* ===== Categories Section ===== */
+.Categories {
     padding-top: 7%;
-    padding-left:6%;
+    padding-left: 6%;
     background-color: whitesmoke;
 }
-.Categories div{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:x-large;
+.Categories div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
 
-.cards{
-    padding:5% 3% 5% 5%;
+/* ===== Category Cards Layout ===== */
+.cards {
+    padding: 5% 3% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: whitesmoke;
 }
 
-.crd{
-    position:relative;
-    height:160px;
-    width:240px;
-    box-shadow: 10px 10px  10px 10px rgb(243, 243, 243);
+.crd {
+    position: relative;
+    height: 160px;
+    width: 240px;
+    box-shadow: 10px 10px 10px 10px rgb(243, 243, 243);
     margin-right: 1.5%;
     margin-bottom: 1.5%;
     background-color: white;
 }
 
-.crd img{
+.crd img {
     width: 95%;
-    height:95%;
+    height: 95%;
     padding-left: 5px;
-    
 }
 
-.cardname{
+.cardname {
     position: absolute;
-    background-color: rgb(253, 105, 20) ;
-    color:white;
-    width:55px;
+    background-color: rgb(253, 105, 20);
+    color: white;
+    width: 55px;
     border-radius: 5px;
-    top:10px;
-    right:10px;
+    top: 10px;
+    right: 10px;
     text-align: center;
 }
 
-.cn2, .cn3, .cn10, .cn11{
-    width:80px;
+/* ===== Wide Card Labels ===== */
+.cn2, .cn3, .cn10, .cn11 {
+    width: 80px;
 }
-.cn5{
-    width:150px;
+.cn5 {
+    width: 150px;
 }
-.cn8{
-    width:90px;  
+.cn8 {
+    width: 90px;  
 }
-.cn12, .cn13{
-    width:120px; 
-}
-
-.crd:hover img{
-    transform:scale(0.8);
+.cn12, .cn13 {
+    width: 120px; 
 }
 
-/* Veg Styles */
+.crd:hover img {
+    transform: scale(0.8); /* Shrinks image on hover */
+}
 
-.Meals{
+/* ===== Meals Title Section ===== */
+.Meals {
     padding-top: 4%;
-    padding-left:7.2%;
+    padding-left: 7.2%;
 }
-.Meals div{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:x-large;
+.Meals div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
 
-.veg{
-    border:3px solid rgb(253, 105, 20);
-    margin:4% 6%;
-    padding:2%;
+/* ===== Veg Meals Box ===== */
+.veg {
+    border: 3px solid rgb(253, 105, 20);
+    margin: 4% 6%;
+    padding: 2%;
     background-color: whitesmoke;
 }
-.veg p{
+.veg p {
     font-size: 1.27em;
     font-family: sans;
 }
-.veg span{
-    color:rgb(253, 105, 20) ;
-    font-weight:bolder;
+.veg span {
+    color: rgb(253, 105, 20);
+    font-weight: bolder;
     font-size: 30px;
 }
 
-.cards2{
+/* ===== Veg Cards Grid ===== */
+.cards2 {
     padding-left: 1.6%;
     padding-top: 3%;
     display: flex;
@@ -172,152 +176,164 @@ nav{
     flex-direction: row;
     justify-content: center;
 }
-.vcrd{
-    position:relative;
-    height:250px;
-    width:220px;
+
+.vcrd {
+    position: relative;
+    height: 250px;
+    width: 220px;
     box-shadow: 10px 0px 10px 10px rgb(225, 225, 225);
     margin-right: 2%;
     margin-bottom: 2%;
     background-color: white;
 }
-.vcrd img{
+.vcrd img {
     width: 100%;
-    height:70%;
+    height: 70%;
 }
-.vcardname{
+.vcardname {
     position: absolute;
-    color:rgb(8, 8, 8);
+    color: rgb(8, 8, 8);
     border-radius: 5px;
-    bottom:30px;
-    left:10px;
+    bottom: 30px;
+    left: 10px;
     font-weight: 600;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
-.vcn12, .vcn26, .vcn29, .vcn33{
-    bottom:10px;
+/* ===== Adjustments for Long Titles ===== */
+.vcn12, .vcn26, .vcn29, .vcn33 {
+    bottom: 10px;
 }
-.vcn24, .vcn32{
-    bottom:10px;
+.vcn24, .vcn32 {
+    bottom: 10px;
 }
 
 .vcrd:hover {
-    transform:scale(1.1);
+    transform: scale(1.1); /* Grows on hover */
     transition-duration: 0.2s;
 }
 
-/* Baingan Bharta */
+/* ===== Baingan Bharta Recipe Page ===== */
 body{
     background-color: whitesmoke;
 }
 
-.meals{
+/* Meals Section */
+.meals {
     padding-top: 4%;
-    padding-left:5%;
+    padding-left: 5%;
 }
-.meals div{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:x-large;
+.meals div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
 
-.mheader{
-    background-color:rgb(253, 105, 20) ;
+/* Header Bar */
+.mheader {
+    background-color: rgb(253, 105, 20);
     color: white;
-    width:87%;
-    padding:20px;
+    width: 87%;
+    padding: 20px;
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
 }
-.mheader span{
+.mheader span {
     padding-left: 1%;
 }
 
-.Ing{
-    width:90%;
+/* Ingredient Image and Text Box */
+.Ing {
+    width: 90%;
     margin-left: 5%;
     margin-top: 2%;
     box-shadow: 10px 10px 10px 10px rgb(225, 225, 225);
     background-color: white;
 }
-.ing{
+.ing {
     display: flex;
 }
-
-.ing img{
-    padding:4%;
-    width:46%;
+.ing img {
+    padding: 4%;
+    width: 46%;
     height: 700px;
 }
-.ing span{
-    border:1px solid rgb(253, 105, 20);
+.ing span {
+    border: 1px solid rgb(253, 105, 20);
     background-color: white;
-    color:rgb(253, 105, 20);
+    color: rgb(253, 105, 20);
     border-radius: 3px;
-    padding:5px;
+    padding: 5px;
     margin-left: 2%;
 }
-.names{
-    width:85%;
-    padding:2%;
+
+/* Ingredient Tags / Buttons */
+.names {
+    width: 85%;
+    padding: 2%;
     background-color: rgb(253, 105, 20);
-    color:white;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 7%;
     justify-content: center;
 }
-.names button{
-    margin-right:5px;
+.names button {
+    margin-right: 5px;
     border: 1px solid white;
     background-color: green;
     border-radius: 50%;
-    color:white;
+    color: white;
 }
-.names h3{
-    width:100%;
+.names h3 {
+    width: 100%;
 }
-.names p{
-    width:33%;
+.names p {
+    width: 33%;
 }
 
-.measure{
+/* Measurement Section */
+.measure {
     margin-left: 4%;
 }
-.measure p{
+.measure p {
     font-weight: bold;
     font-size: 20px;
 }
-.spoon{
-    width:90%;
+.spoon {
+    width: 90%;
     border: 1px solid black;
     background-color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:1.5% 1.5% 1% 1.5%;
+    padding: 1.5% 1.5% 1% 1.5%;
 }
-.spoon span{
-    width:40%;
-    padding-right:10%;
+.spoon span {
+    width: 40%;
+    padding-right: 10%;
     padding-bottom: 1%;
     font-family: monospace;
     font-weight: 500;
 }
-.inst{
+
+/* Instructions Section */
+.inst {
     padding-top: 3%;
     padding-left: 4.5%;
     padding-bottom: 3%;
     margin-bottom: 10%;
 }
-.ctgs{
+
+/* Additional Categories Section */
+.ctgs {
     padding-top: 1%;
-    padding-left:5.5%;
+    padding-left: 5.5%;
     background-color: whitesmoke;
 }
-.ctgs div{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:x-large;
+.ctgs div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
+/* ===== End of Styles ===== */

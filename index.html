@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
     <title>MealFinder</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
     <!-- Header starts here -->
-     <header>
+    <header>
         <nav>
 
+            <!-- Left section: Logo and Brand Name -->
             <div class="left">
                 <a href="./index.html"><img src="./Assets/Logo.png" alt="MealFinder Logo"></a>
                 <div><a href="./index.html">MealFinder</a></div>
             </div>
 
+            <!-- Right section: Hamburger menu icon -->
             <div class="right">
                 <i class="fa-solid fa-bars fa-l" style="color: #ffffff;"></i>
-            </div> 
-               
+            </div>
+
         </nav>
-     </header>
+    </header>
     <!-- Header ends here -->
 
-    <!-- header-img starts here -->
-     <section class="main" style="width: 100%;">
+    <!-- Hero image section starts here -->
+    <section class="main" style="width: 100%;">
+        <!-- Background header image -->
         <img src="./Assets/header_image.1dc0f346d407fc577d16.jpg" alt="header-img">
 
+        <!-- Absolute positioned content over the image -->
         <div class="abs">
             <input type="search" placeholder="Search recipies here...">
-            <button><i class="fa-solid fa-magnifying-glass fa-xl" ></i></button>
+            <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
             <h1>What are your favourite cusines?</h1>
             <h4>Personalize your Experiences</h4>
         </div>
+    </section>
+    <!-- Hero image section ends here -->
 
-     </section>
-    <!-- header-img ends here -->
+    <!-- Categories heading starts here -->
+    <section class="Categories">
+        <div><span>C A T E </span> G O R I E S</div>
+        <div style="color:#e18941;">─────</div>
+    </section>
+    <!-- Categories heading ends here -->
 
-    <!-- Categories starts here -->
-     <section class="Categories">
-            <div><span>C A T E </span> G O R I E S</div>     
-            <div style="color:#e18941;">─────</div>   
-     </section>
-    <!-- Categories starts here -->
+    <!-- Category cards start here -->
+    <section class="cards">
 
-    <!-- Cards  Starts here-->
-     <section class="cards">
-
+        <!-- Individual category card -->
         <div class="crd card1">
             <div class="cardname cn1">BEEF</div>
             <a href="#"><img src="./Assets/beef.png" alt="BEEF"></a>
@@ -120,7 +137,8 @@
         </div>
 
     </section>
-    <!-- Cards  ends here-->
+    <!-- Category cards end here -->
 
 </body>
+
 </html>

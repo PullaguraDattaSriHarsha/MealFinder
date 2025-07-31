@@ -138,6 +138,7 @@ nav {
 
 .crd:hover img {
     transform: scale(0.8); /* Shrinks image on hover */
+    transition-duration: 0.2s;
 }
 
 /* ===== Meals Title Section ===== */

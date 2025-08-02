@@ -11,9 +11,11 @@ nav {
     padding: 15px 50px;
     position: fixed;
     z-index: 5;
-    width: 91.95%;
+    width: 100%;
     top: 0;
-    left: 10; /* Incorrect unit, ideally should be 10px */
+    left: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
 }
 
 .left a {
@@ -33,7 +35,7 @@ nav {
 .main {
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 91.95%;
     height: 500px;
     background-color: black;
     margin-top: 55px;

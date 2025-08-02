@@ -85,6 +85,11 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
+.Categories span{
+    display:inline-block;
+    border-top: 5px solid rgb(253, 105, 20);
+    width:7%;
+}
 
 /* ===== Category Cards Layout ===== */
 .cards {
@@ -150,12 +155,18 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
+.Meals span{
+    display:inline-block;
+    border-top: 5px solid rgb(253, 105, 20);
+    width:7%;
+}
 
 /* ===== Veg Meals Box ===== */
 .veg {
     border: 3px solid rgb(253, 105, 20);
     margin: 4% 6%;
     padding: 2%;
+    box-sizing: border-box;
     background-color: whitesmoke;
 }
 .veg p {
@@ -338,3 +349,194 @@ body{
     font-size: x-large;
 }
 /* ===== End of Styles ===== */
+
+/* ===== Responsive Styles ===== */
+
+/* For tablets and medium devices */
+@media only screen and (max-width: 991px) {
+  nav {
+    padding: 12px 15px;
+    font-size: medium;
+    width: 94%;
+  }
+  .right {
+    padding-left: 40%;
+  }
+  .main {
+    height: 350px;
+  }
+  .main img {
+    height: 350px;
+  }
+  .main .abs {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -35%);
+  }
+  .main input {
+    width: 30%;
+    padding: 10px;
+  }
+  .Categories span{
+    width:13%;
+  }
+  .cards {
+    justify-content: center;
+    padding: 3% 1% 3% 1%;
+  }
+  .crd {
+    width: 40%;
+    height: 200px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+  .crd img{
+    height: 100%;
+  }
+  .cardname { font-size: 13px; padding: 3px 0; }
+  .cards2 {
+    padding-left: 0.5%;
+    padding-top: 2.5%;
+  }
+  .Meals span{
+    width:11%;
+  }
+  .vcrd { width: 40%; height: 250px;margin-right: 25px; margin-bottom: 25px; }
+  .vcrd img { height: 80%; }
+}
+
+/* For large mobile and small tablets */
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 12px 15px;
+    font-size: medium;
+    width: 89.099%;
+  }
+  .main {
+    height: 220px;
+    margin-top: 45px;
+  }
+  .main img { height: 220px;}
+  .main .abs { height: 220px;top: 40%; left: 50%; transform: translate(-50%, -29%); }
+  .main input { width: 60%; min-width: 100px; }
+  .Categories span{
+    width:24%;
+  }
+  .Meals span{
+    width:21%;
+  }
+  .cards,
+  .cards2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  .crd{
+    width: 98%;
+    height: 200px;
+    margin: 8px 0;
+    min-width: 170px;
+    max-width: 325px;
+  }
+  .vcrd {
+    width: 70%;
+    height: 250px;
+    margin: 8px 0;
+  }
+  .vcrd img{ height:75%;}
+  .crd img { height: 100%; }
+  .cardname { font-size: 12px; top: 5px; right: 5px; }
+}
+
+/* For very small screens and mobile phones */
+@media only screen and (max-width: 375px) {
+  nav { font-size: 11px;width: 88%; }
+  .left img { height: 12px; width: 13px; }
+  .main {
+    height: 130px;
+    margin-top: 40px;
+  }
+  .Categories span{
+    width:34%;
+  }
+  .Meals span{
+    width:31%;
+  }
+  .main img,
+  .main .abs { height: 130px; }
+  .main .abs { font-size: 10px; }
+  .main input { width: 50%; font-size: 10px; }
+  .main button { height: 35px; width: 35px; }
+  .crd{
+    width: 96%;
+    height: 150px;
+    margin: 8px 0;
+    min-width: 170px;
+    max-width: 325px;
+  }
+   .vcrd {
+    width: 70%;
+    height: 200px;
+    margin: 8px 0;
+  }
+  .vcrd img{ height:67%;}
+}
+
+
+/* Large mobile and small tablets (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .mheader {
+        width: 90% !important;
+        margin-left: 5% !important;
+        padding: 15px 10px;
+    }
+    .Ing {
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+    .ing img {
+        height: auto;
+        max-height: 350px;
+    }
+    .names, .measure, .inst {
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+    .measure p {
+        font-size: 18px;
+    }
+    .spoon span {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+/* Very small screens (up to 375px) */
+@media only screen and (max-width: 375px) {
+    .mheader {
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+    .Ing {
+        width: 95% !important;
+        margin-left: 2.5% !important;
+    }
+    .ing img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        padding: 1%;
+    }
+    .measure p {
+        font-size: 16px;
+    }
+    .names p {
+        width: 100%;
+    }
+    .inst {
+        padding-left: 3%;
+    }
+}
